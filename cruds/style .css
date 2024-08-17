@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root{
+--main-color:rgb(117, 82, 117);
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    margin: 20px 0; 
+    text-transform: uppercase;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 4px;
+    color: white;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    -moz-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
+}
+.price{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    gap: 10px;
+}
+#total{
+    background-color: rgb(117, 82, 117);
+    padding: 10px;
+    text-align: center;
+    
+}
+#total::before{
+    content: "total: ";
+}
+button{
+        width: 100%;
+        height: 30px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background-color: var(--main-color);
+        color: white;
+        margin: 10px 0 0;
+        border-radius:15px ;
+        -webkit-border-radius:15px ;
+        -moz-border-radius:15px ;
+        -ms-border-radius:15px ;
+        -o-border-radius:15px ;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+}
+button:hover{
+    background-color:rgb(104, 56, 104) ;
+    letter-spacing: 1px;
+    /* font-size: 16px; */
+
+}
+.outputs{
+    margin: 10px 0;
+}
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+
+}
+.btnSearch button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+table th{
+    text-transform: uppercase;
+
+}
+th , td{
+    padding: 5px;
+}
