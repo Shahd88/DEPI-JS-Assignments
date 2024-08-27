@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <input type="text" name="" class="myinput" id="myinput">
+        <button id="button">add </button>
+        <button id="clear">clear All  </button>
+    </form>
+
+    <table id="table">
+        <tr>
+            <td>name</td>
+        </tr>
+    </table>
+
+
+    <script>
+
+        let myinput = document.getElementsByClassName("myinput")[0]
+        let button = document.getElementById("button")
+        let clear = document.getElementById("clear")
+        let table = document.getElementById("table")
+
+        let arr = JSON.parse(localStorage.getItem('data')) || []
+
+        button.addEventListener('click',(e)=>{
+            e.preventDefault()
+            table.innerHTML+= `
+             <tr>
+            <td>${myinput.value}</td>
+        </tr>
+            
+            `
+            arr.push(myinput.value)
+
+            localStorage.setItem("data",JSON.stringify(arr))
+            myinput.value=''
+        })
+
+        function showData(){
+             data = JSON.parse( localStorage.getItem('data'))
+
+            data.forEach(element => {
+                table.innerHTML +=` <tr>
+            <td>${element}</td>
+        </tr>`                
+            });
+            
+
+
+        }
+
+        showData()
+
+
+        clear.addEventListener("click",()=>{
+            localStorage.removeItem('data')
+            showData()
+
+        })
+
+
+ 
+        
+
+        
+      
+
+
+    </script>
+
+
+    <script>
+
+        // string 
+
+       //  localStorage   => object   => key : value 
+
+       
+    //    JSON.parse
+
+    //    localStorage.setItem("name",JSON.stringify([1,2,2]))
+    //   let x = localStorage.getItem("name")
+    //   console.log("🚀 ~ x:", JSON.parse(x) )
+
+    //   localStorage.removeItem("name")
+
+    //   localStorage.clear()
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

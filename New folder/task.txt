@@ -1,0 +1,50 @@
+like we added the data to the web page 
+from the  (prompt and  input)
+
+
+the task is :
+you have an array with the data 
+["ahmed mostafa","maohamed ibarhim","youmna samir"]
+
+
+you have to display the data inside the table
+
+
+
+
+
+,,,,,,,,,,,,,,,
+
+
+
+
+then if i have the data in (array of objects) as i have additional information like age
+
+
+[{name:"ahmed",age:10},{ name:"mohamed",age:20  },{name:"ibrahim",age:30}]
+
+
+how would we  display this data
+
+
+
+
+////////////////// /////////////////////////////////// task  2
+
+
+  you have 3 images and you want to add event to show the the image when mouseEnter and hide it when mouseLeave
+
+
+
+
+
+/////////////////////////////////////////// task 3
+
+
+
+
+print me the position of cursor on the div and update  it recently when the mouse move 
+
+
+
+
